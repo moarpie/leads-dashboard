@@ -1,0 +1,40 @@
+#dashboard {
+
+}
+.flexwrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#clock {
+  z-index: 99999;
+  color: #FFF;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.alert {
+  display:inline-block;
+  z-index: 99999;
+  margin: 0 auto;
+  margin-top: 96px;
+  padding: 32px 64px 32px 64px;
+  text-align: center;
+  font-size: 22px;
+  background: #ebc864;
+  color: #263339;
+  border: none;
+  box-shadow:
+  0 0.8px 2.5px rgba(0, 0, 0, 0.024),
+  0 1.8px 5.8px rgba(0, 0, 0, 0.035),
+  0 3.2px 10px rgba(0, 0, 0, 0.043),
+  0 5px 15.9px rgba(0, 0, 0, 0.05),
+  0 7.7px 24.5px rgba(0, 0, 0, 0.057),
+  0 12.1px 38.3px rgba(0, 0, 0, 0.065),
+  0 20px 63.6px rgba(0, 0, 0, 0.076),
+  0 40px 127px rgba(0, 0, 0, 0.1)
+;
+
+}
