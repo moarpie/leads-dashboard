@@ -28,24 +28,16 @@ app.post('/', function(req, res){
   var lastname    = req.body.contact.last_name;
   var email       = req.body.contact.email;
 
-  var measureMsg  = " har lige bestilt en opmåling!";
-  var brochureMsg = " har bestilt et inspirationskatalog!"
+  var conversionMsg  = " just subscribed to our newsletter!";
 
   //do stuff on POST
   console.log(fullrequest);
-  console.log("contact email: " + email + "tag: " + tag);
+  console.log("contact email: " + email + " tag: " + tag);
 
+  io.sockets.emit('update-msg', { data: email + conversionMsg});
 
-  if (tag === "bestilt opmåling") {
-    io.sockets.emit('update-msg', { data: email + measureMsg});
-  }
-  else if (tag === "email katalog") {
-    io.sockets.emit('update-msg', { data: email + brochureMsg});
-  }
-  else
-  io.sockets.emit('update-msg', { data: "INVALID TAG VALUE IN JSON"});
+  ////io.sockets.emit('update-msg', { data: "INVALID TAG VALUE IN JSON"});
 
 });
-
 
 server.listen(port, () => console.log(`Listening on port ${port}!`))

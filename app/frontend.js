@@ -33,7 +33,7 @@ socket.on('update-msg', function (msg) {
       function()
       {
         $('.alert').removeClass('show')
-      }, 30000);
+      }, 10000);
 });
 
 
@@ -49,7 +49,7 @@ $(document).ready(function(){
   var i = 0;
   setInterval(function () {
      iframe.attr('src', locations[++i % len]);
-   }, 6000000); //Timer for how long a dashboard is shown
+   }, 60000); //Timer for how long a dashboard is shown
 });
 
 //clock
