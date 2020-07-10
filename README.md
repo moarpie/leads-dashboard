@@ -22,7 +22,7 @@ First line needs to be changed to the IP or URL that the server is running on.
 var socket = io.connect('http://localhost:3000');
 ```
 
-You can also change all the timer that control the various things that happen on the screen.
+Here you configure the list of the dashboards you want to show.
 
 ```javascript
 $(document).ready(function(){
@@ -31,5 +31,3 @@ $(document).ready(function(){
     "https://datastudio.google.com/embed/reporting/1d100e70-2065-4fab-81f3-0b9417b5eabb/page/c2P1"
   ];
 ```
-
-Here you configure the list of the dashboards you want to show.
