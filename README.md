@@ -1,5 +1,7 @@
 # Leads Dashboard
-This project will show as many dashboards as you choose and show live notifications on top of it when a contact event occurs in Active Campaign. It works by showing the dashboard URL in an iframe and displays notifications using sockets.io with incoming JSON data from Active Campaign.
+This project will present a custom full-screen dashboard and show live notifications on top of it when a custom event is received from Active Campaign. You can set it to show as many different dashboards as you want, and change all timers.
+
+It works by showing the dashboard URL in an iframe and displays notifications using sockets.io with incoming JSON data from Active Campaign.
 
 It comes complete with confetti and a nice little *cha-ching* sound to indicate that a user has converted. :)
 
@@ -19,3 +21,14 @@ First line needs to be changed to the IP or URL that the server is running on.
 ```var socket = io.connect('http://localhost:3000');```
 
 You can also change all the timer that control the various things that happen on the screen.
+
+
+```$(document).ready(function(){
+  //Set your different data reports here
+  var locations = [
+    "https://datastudio.google.com/embed/reporting/1d100e70-2065-4fab-81f3-0b9417b5eabb/page/c2P1",
+    "https://datastudio.google.com/embed/reporting/1d100e70-2065-4fab-81f3-0b9417b5eabb/page/c2P1"
+  ];```
+
+
+Here you configure the list of the dashboards you want to show.
