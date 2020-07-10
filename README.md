@@ -18,7 +18,9 @@ should work out of the box, of course you can change all the text that gets sent
 
 First line needs to be changed to the IP or URL that the server is running on.
 
-```var socket = io.connect('http://localhost:3000');```
+```javascript
+var socket = io.connect('http://localhost:3000');
+```
 
 You can also change all the timer that control the various things that happen on the screen.
 
